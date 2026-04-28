@@ -50,4 +50,23 @@ public class CellPhone {
     {
        return String.format(" phone is calling %s",phoneNumber);
     }
+    /*If I wanted to, I could add another method named dial so long as the signature is different
+    Different signatures are recognized by Java w/o specifying the variable so long as
+    the type of parameters used for the same method name is different
+
+    When the same name is used for methods with diff signatures, these are referred to as
+    OVERLOADED METHODS or OVERLOADS
+    */
+    public CellPhone()
+    {
+    }
+    public CellPhone(int serialNumber, String model, String carrier, String PhoneNumber, String owner)
+    {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = PhoneNumber;
+        this.owner = owner;
+    }
 }
+

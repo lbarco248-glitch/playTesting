@@ -47,11 +47,16 @@ public class CellPhoneApplication {
             Phone2.setOwner(input.nextLine());
             System.out.println(Phone2.getOwner());
             input.close();
+CellPhone Phone3 = new CellPhone(456156,"Samsung","MetroPCS","9722172987","Luis");
             display(Phone1);
             display(Phone2);
+            display(Phone3);
+            //display(PhoneX) calls the object
         Phone1.dial(Phone2.getPhoneNumber());
         //Phone 1 is dialing Phone 2 using the dial method in CellPhone
         Phone2.dial(Phone1.getPhoneNumber());
+        Phone3.dial(Phone1.getPhoneNumber());
+
     }
     public static void display(CellPhone phone)
     {
