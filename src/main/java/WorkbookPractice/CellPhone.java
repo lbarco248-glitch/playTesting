@@ -59,6 +59,7 @@ public class CellPhone {
     */
     public CellPhone()
     {
+        //included this method with empty body to iterate other calls to it can either include no parameter () or 5 parameters (below)
     }
     public CellPhone(int serialNumber, String model, String carrier, String PhoneNumber, String owner)
     {
@@ -67,6 +68,7 @@ public class CellPhone {
         this.carrier = carrier;
         this.phoneNumber = PhoneNumber;
         this.owner = owner;
+        //without including this.variable, the overloaded method is a husk that doesn't return inputted values
     }
 }
 
